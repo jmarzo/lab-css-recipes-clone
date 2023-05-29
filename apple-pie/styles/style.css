@@ -5,14 +5,26 @@ html {
   font-size: 16px;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
-body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
   margin: 0;
   padding: 0;
   font-weight: lighter;
+  list-style-type: none;
 }
 
 /*  Set the font */
@@ -22,3 +34,58 @@ body {
 
 /* STYLES */
 /* Write your CSS below */
+
+.apple-pie-img {
+  width: 100%; /* ??? */
+}
+
+.header-wrapper {
+  position: relative;
+}
+
+.header-wrapper h1 {
+  position: absolute; /* is positioned inside the parent which needs to be "non static" */
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 9em;
+}
+
+#intro {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding-left: 10%;
+}
+
+#recipe-info {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+#cooking-info {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+#ingredients h2 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+#ingredients {
+  margin-left: 10%;
+  list-style-type: none;
+}
+
+#directions {
+  margin-left: 10%;
+  margin-bottom: 60px;
+}
+
+#directions h2 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
